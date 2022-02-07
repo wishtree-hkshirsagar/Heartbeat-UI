@@ -1,0 +1,123 @@
+/*=====================================
+    Default Theme:
+    -----------------------------------
+    Fonts: 
+        Main Font:       Raleway
+        Fallback Font:   Sans Serif
+    -----------------------------------
+    Colors:
+        Deep Sky Blue:   #2EC6F9
+        French Rose:     #F4558F
+        Gray:            #BFBDBD
+        White:           #FFFFFF
+        Black:           #000000
+=======================================*/
+
+
+/*=====================================
+                Colors
+=======================================*/
+
+:root {
+    --deepSkyBlue: #2EC6F9;
+    --frenchRose: #F4558F;
+    --gray: #BFBDBD;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+
+/*=====================================
+             CSS Reset
+=======================================*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/*=====================================
+             Html, Body
+=======================================*/
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li {
+    list-style: none;
+}
+
+
+/*=====================================
+            Utilities Classes
+=====================================*/
+
+.container {
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/*=====================================
+                Preloader
+=====================================*/
+
+#preloader {
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url("../images/preloader/preloader.gif");
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 165px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -90px;
+    margin-top: -82.5px;
+}
+
+
+/*=====================================
+            Header Section
+=====================================*/
+
+.header {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/*=====================================
+            Home Section
+=====================================*/
