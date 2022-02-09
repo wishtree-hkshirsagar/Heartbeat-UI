@@ -52,6 +52,7 @@
 
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -141,12 +142,12 @@ li {
 
 .brand-tagline {
     position: relative;
-    left: 31.5rem;
+    left: 39.5rem;
     font-weight: bold;
 }
 
 .navbar-links li a {
-    padding: 1rem;
+    padding: 1.5rem;
     display: block;
     font-weight: 500;
 }
@@ -164,10 +165,12 @@ li {
 .navbar-links li:last-child a {
     background-color: var(--deepSkyBlue);
     border-radius: 9px;
-    padding: 5px 10px;
-    margin-top: 12px;
+    padding: 5px 13px;
+    margin-top: 20px;
+    margin-left: 23px;
     color: white;
     font-weight: 600;
+    margin-right: 70px;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
@@ -198,7 +201,7 @@ li {
 }
 
 .home-image img {
-    margin-right: 135px;
+    margin-right: 46px;
     width: 445px;
     height: 445px;
     margin-top: -54px;
@@ -235,7 +238,7 @@ li {
 
 .home-info {
     flex: 1;
-    margin-left: 85px;
+    margin-left: 92px;
 }
 
 .home-info h1 {
@@ -313,16 +316,44 @@ li {
 
 .home-section-two h2 {
     font-weight: 900;
+    font-size: 33px;
 }
 
 .campaign-one>h4 {
-    width: 230px;
+    width: 240px;
     margin-left: 22px;
 }
 
-.campaign-two>h4 {
-    width: 230px;
-    margin-left: 22px;
+.campaign-one>p {
+    width: 288px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.campaign-one>span {
+    margin-left: -84px;
+    position: relative;
+    left: 40px;
+}
+
+.campaign-one>a {
+    margin-left: 4px;
+    position: relative;
+    left: 1px;
+    top: 10px;
+    text-decoration: underline;
+}
+
+.campaign-two>p {
+    width: 305px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.campaign-two>span {
+    margin-left: -84px;
+    position: relative;
+    left: 40px;
 }
 
 .campaign-one img,
@@ -333,4 +364,360 @@ li {
 .campaign-divider {
     position: relative;
     top: 62px;
+}
+
+.campaign-one span,
+.campaign-one a,
+.campaign-two span {
+    color: var(--deepSkyBlue);
+}
+
+.tik-tok-section {
+    padding: 80px 0;
+}
+
+.tik-tok-section h4 {
+    font-size: 33px;
+}
+
+.influencer-section-one .influencer-image img {
+    margin-left: 92px;
+}
+
+.influencer-section-one .influencer-info {
+    padding-left: 52px;
+}
+
+.influencer-section-one .influencer-info h4 {
+    padding-top: 90px;
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+
+.influencer-section-one .influencer-info p {
+    padding-bottom: 32px;
+    width: 482px;
+}
+
+.influencer-section-one .influencer-info a {
+    background-color: var(--deepSkyBlue);
+    color: var(--white);
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.influencer-section-one:after {
+    content: "";
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    top: 253%;
+    right: 7%;
+    transform: translateY(-50%);
+    background-image: linear-gradient( -45deg, #fbd7e8 0%, #fbd7e8 0%);
+    border-radius: 50%;
+    z-index: -6;
+    left: 77%;
+}
+
+.influencer-section-two {
+    padding: 130px 0;
+    margin-left: 142px;
+}
+
+.influencer-section-two .influencer-info h4 {
+    width: 460px;
+    font-size: 32px;
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+
+.influencer-section-two .influencer-info p {
+    width: 550px;
+}
+
+.influencer-section-two .influencer-image img {
+    margin-left: 45px;
+}
+
+.influencer-section-two .influencer-info img {
+    padding: 25px;
+}
+
+.brand-one {
+    float: left;
+    position: relative;
+    left: -22px;
+}
+
+.brand-two {
+    float: left;
+    position: relative;
+    left: 45px;
+}
+
+.brand-three {
+    float: right;
+}
+
+.influencer-section-two .influencer-info .brand-one p,
+.influencer-section-two .influencer-info .brand-two p,
+.influencer-section-two .influencer-info .brand-three p {
+    position: relative;
+    top: -20px;
+    left: 25px;
+    text-align: center;
+}
+
+.influencer-section-two .influencer-info .brand-one p {
+    width: 98px;
+}
+
+.influencer-section-two .influencer-info .brand-two p {
+    width: 108px;
+}
+
+.influencer-section-two .influencer-info .brand-three p {
+    width: 152px;
+    left: 6px;
+}
+
+.tik-tok-ad-section .tik-tok-image img {
+    margin-left: 90px;
+}
+
+.tik-tok-ad-section .tik-tok-info {
+    padding-top: 155px;
+    margin-left: 45px;
+}
+
+.tik-tok-ad-section .tik-tok-info h4 {
+    font-size: 32px;
+}
+
+.instagram-ambassadorship {
+    text-align: center;
+    padding: 60px 160px;
+}
+
+.instagram-ambassadorship h4 {
+    font-size: 32px;
+}
+
+.instagram-ambassadorship p {
+    padding: 0px 152px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.instagram-ambassadorship a {
+    background-color: var(--deepSkyBlue);
+    color: var(--white);
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.featured-section {
+    text-align: center;
+}
+
+.featured-section h4 {
+    font-size: 32px;
+}
+
+.featured-section img {
+    padding: 30px;
+}
+
+.feature-images img:nth-child(4) {
+    position: relative;
+    top: 10px;
+}
+
+
+/*=====================================
+            Blog Section
+=====================================*/
+
+.blog-section img {
+    padding: 15px;
+}
+
+.blog-title h4 {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.blog-one img,
+.blog-two img {
+    width: 360px;
+    height: 200px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.blog-one img {
+    margin-left: 100px;
+}
+
+.blog-three img {
+    background-color: var(--darkBlue);
+    padding: 24px 121px;
+    position: relative;
+    top: 15px;
+    border-radius: 15px;
+}
+
+.blog-one .overlay {
+    width: 330px;
+    height: 60px;
+    position: relative;
+    left: 115px;
+    bottom: 78px;
+    opacity: 0.6;
+    background-image: linear-gradient(to bottom, rgba(163, 221, 233, 0), rgba(141, 235, 255, 1) 90%);
+}
+
+.blog-one p {
+    position: relative;
+    bottom: 100px;
+    left: 120px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.blog-two .overlay {
+    width: 330px;
+    height: 60px;
+    position: relative;
+    left: 15px;
+    bottom: 98px;
+    opacity: 0.6;
+    background-image: linear-gradient(to bottom, rgba(163, 221, 233, 0), rgb(255, 175, 0, 1) 90%);
+}
+
+.blog-two p {
+    position: relative;
+    bottom: 40px;
+    left: 25px;
+    color: var(--white);
+    font-weight: 700;
+    z-index: 1;
+}
+
+.blog-three p {
+    position: relative;
+    bottom: 12px;
+    left: 15px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+
+/*=====================================
+            Contact Section
+=====================================*/
+
+.contact-section {
+    background-image: url(../images/contact/contact-background.png);
+}
+
+.contact-section img {
+    padding: 45px 0;
+    margin-left: 80px;
+}
+
+.contact-us-form {
+    background: var(--white);
+    width: 570px;
+    padding: 45px 35px;
+    margin-top: 45px;
+    height: 365px;
+    font-weight: 700;
+}
+
+.contact-us-form h1 {
+    padding-bottom: 10px;
+}
+
+.contact-us-form input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    width: 370px;
+}
+
+.contact-us-form div {
+    padding: 10px 0;
+}
+
+.first-name label {
+    margin-right: 10px;
+}
+
+.last-name label {
+    margin-right: 12px;
+}
+
+.phone label {
+    margin-right: 42px;
+}
+
+.email label {
+    margin-right: 50px;
+}
+
+.submit {
+    background-color: var(--frenchRose);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 90px;
+    margin-top: 25px;
+}
+
+
+/*=====================================
+            Footer Section
+=====================================*/
+
+#footer {
+    padding: 60px 75px 0;
+}
+
+#footer ul {
+    width: 135px;
+}
+
+.footer-section div {
+    padding-right: 12rem;
+}
+
+.footer-section h5 {
+    margin-top: 25px;
+}
+
+.footer-icons {
+    margin-left: 70px;
+    padding: 25px;
+}
+
+.footer-icons img {
+    margin-right: 25px;
+}
+
+.copyright {
+    background-color: var(--gray);
+    text-align: center;
+    width: 118%;
+    padding: 10px;
+    margin-left: -77px;
 }
