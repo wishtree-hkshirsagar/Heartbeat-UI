@@ -1,8 +1,19 @@
+@font-face {
+    font-family: 'Proxima-Nova-Bold';
+    src: url('font-awesome/fonts/Proxima-Nova-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Proxima-Nova-Black';
+    src: url('font-awesome/fonts/Proxima-Nova-Black.woff') format('woff');
+}
+
+
 /*=====================================
     Default Theme:
     -----------------------------------
     Fonts: 
-        Main Font:       Lato
+        Main Font:       Proxima Nova, Lato
         Fallback Font:   Sans Serif
     -----------------------------------
     Colors:
@@ -76,9 +87,8 @@ li {
 =====================================*/
 
 .container {
-    max-width: 114rem;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 3rem;
 }
 
 .display-flex {
@@ -137,17 +147,18 @@ li {
 
 .brand-title img {
     max-width: 134px;
-    margin-left: 113px;
+    position: relative;
+    left: 80px;
 }
 
 .brand-tagline {
     position: relative;
-    left: 39.5rem;
-    font-weight: bold;
+    left: 41.5rem;
+    font-family: 'Proxima-Nova-Bold';
 }
 
 .navbar-links li a {
-    padding: 1.5rem;
+    padding: 1.66rem;
     display: block;
     font-weight: 500;
 }
@@ -186,24 +197,26 @@ li {
     padding: 80px 0;
 }
 
-#home .container:before {
+.home-wrapper {
+    position: relative;
+}
+
+.home-info:before {
     content: "";
     position: absolute;
     height: 424px;
     width: 450px;
-    top: 53%;
+    top: 32%;
     right: 7%;
     transform: translateY(-50%);
     background-image: linear-gradient( -45deg, #e7f7fa 0%, #e7f7fa 0%);
     border-radius: 50%;
     z-index: -6;
-    left: -12%;
+    left: -28%;
 }
 
 .home-image img {
     margin-right: 46px;
-    width: 445px;
-    height: 445px;
     margin-top: -54px;
 }
 
@@ -237,15 +250,14 @@ li {
 } */
 
 .home-info {
-    flex: 1;
-    margin-left: 92px;
+    flex: 0 0 47.3%;
 }
 
 .home-info h1 {
     font-size: 45px;
-    font-weight: 900;
     max-width: 30rem;
     padding-bottom: 15px;
+    font-family: 'Proxima-Nova-Black';
 }
 
 .home-info h2 {
@@ -315,7 +327,7 @@ li {
 }
 
 .home-section-two h2 {
-    font-weight: 900;
+    font-family: 'Proxima-Nova-Black';
     font-size: 33px;
 }
 
@@ -377,11 +389,12 @@ li {
 }
 
 .tik-tok-section h4 {
-    font-size: 33px;
+    font-family: 'Proxima-Nova-Bold';
+    font-size: 30px;
 }
 
-.influencer-section-one .influencer-image img {
-    margin-left: 92px;
+.influencer-section-one {
+    position: relative;
 }
 
 .influencer-section-one .influencer-info {
@@ -406,23 +419,26 @@ li {
     margin-right: 10px;
 }
 
-.influencer-section-one:after {
+.influencer-section-one .influencer-info:after {
     content: "";
     position: absolute;
     height: 450px;
     width: 450px;
-    top: 253%;
+    top: 56%;
     right: 7%;
     transform: translateY(-50%);
     background-image: linear-gradient( -45deg, #fbd7e8 0%, #fbd7e8 0%);
     border-radius: 50%;
     z-index: -6;
-    left: 77%;
+    left: 81%;
 }
 
 .influencer-section-two {
-    padding: 130px 0;
-    margin-left: 142px;
+    padding: 243px 0 152px 0;
+}
+
+.influencer-section-two .influencer-info {
+    flex: 0 0 49%;
 }
 
 .influencer-section-two .influencer-info h4 {
@@ -482,17 +498,14 @@ li {
     left: 6px;
 }
 
-.tik-tok-ad-section .tik-tok-image img {
-    margin-left: 90px;
-}
-
 .tik-tok-ad-section .tik-tok-info {
     padding-top: 155px;
-    margin-left: 45px;
+    margin-left: 30px;
 }
 
 .tik-tok-ad-section .tik-tok-info h4 {
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 .instagram-ambassadorship {
@@ -501,11 +514,11 @@ li {
 }
 
 .instagram-ambassadorship h4 {
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 .instagram-ambassadorship p {
-    padding: 0px 152px;
     padding-top: 15px;
     padding-bottom: 30px;
 }
@@ -522,7 +535,8 @@ li {
 }
 
 .featured-section h4 {
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 .featured-section img {
@@ -534,18 +548,22 @@ li {
     top: 10px;
 }
 
+.blog-wrapper {
+    position: relative;
+}
+
 .blog-section:before {
     content: "";
     position: absolute;
     height: 450px;
     width: 450px;
-    top: 491%;
+    top: -10%;
     right: 7%;
     transform: translateY(-50%);
     background-image: linear-gradient( -45deg, #e7f7fa 0%, #e7f7fa 0%);
     border-radius: 50%;
     z-index: -6;
-    left: -6%;
+    left: -22%;
 }
 
 .blog-section:after {
@@ -553,13 +571,13 @@ li {
     position: absolute;
     height: 250px;
     width: 250px;
-    top: 462%;
+    top: -46%;
     right: 7%;
     transform: translateY(-50%);
     background-image: linear-gradient( -45deg, #fbd7e8 0%, #fbd7e8 0%);
     border-radius: 50%;
     z-index: -6;
-    left: 86%;
+    left: 92%;
 }
 
 
@@ -573,9 +591,10 @@ li {
 
 .blog-title h4 {
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
     padding-top: 40px;
     padding-bottom: 15px;
+    font-family: 'Proxima-Nova-Bold';
 }
 
 .blog-one img,
@@ -587,10 +606,6 @@ li {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-}
-
-.blog-one img {
-    margin-left: 100px;
 }
 
 .blog-three img {
@@ -605,7 +620,7 @@ li {
     width: 330px;
     height: 60px;
     position: relative;
-    left: 115px;
+    left: 15px;
     bottom: 78px;
     opacity: 0.6;
     background-image: linear-gradient(to bottom, rgba(163, 221, 233, 0), rgba(141, 235, 255, 1) 90%);
@@ -614,7 +629,7 @@ li {
 .blog-one p {
     position: relative;
     bottom: 100px;
-    left: 120px;
+    left: 25px;
     color: var(--white);
     font-weight: 700;
 }
@@ -651,8 +666,15 @@ li {
             Contact Section
 =====================================*/
 
+#contact-us .container {
+    max-width: 100%;
+}
+
 .contact-section {
     background-image: url(../images/contact/contact-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .contact-section img {

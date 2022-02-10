@@ -31,25 +31,27 @@
     <!-- Header Section Starts -->
     <header class="header">
         <!-- Top Nav -->
-        <nav class="navbar display-flex">
+        <div class="navbar display-flex">
             <!-- Logo -->
             <div class="brand-title">
                 <img src="images/logo/logo.svg" alt="logo">
             </div>
             <!-- Links -->
-            <div class="navbar-links">
-                <span class="brand-tagline">Influencers | Brands & Agencies</span>
-                <ul class="display-flex">
-                    <li><a href="#"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Influencers</a></li>
-                    <li><a href="#">Brands&Agencies</a></li>
-                    <li><a href="#">Full Service Campaigns</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+            <nav>
+                <div class="navbar-links">
+                    <span class="brand-tagline">Influencers | Brands & Agencies</span>
+                    <ul class="display-flex">
+                        <li><a href="#"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Influencers</a></li>
+                        <li><a href="#">Brands&Agencies</a></li>
+                        <li><a href="#">Full Service Campaigns</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <!-- Header Section Ends -->
 
@@ -57,21 +59,28 @@
     <main>
         <!-- Home Section Starts -->
         <section id="home">
-            <div class="container display-flex">
-                <div class="home-info">
-                    <h1>Take the Work Out of Your Ambassador Program</h1>
-                    <p>Simplifying ambassadorships for brands and influencers</p>
-                    <p>through one easy-to-use, TikTok & Instagram</p>
-                    <p>marketing platform.</p>
-                    <h2>Are You...</h2>
-                    <a class="btn" id="one">A Brand or Agency</a>
-                    <a class="btn" id="two">An Influencer</a>
-                </div>
-                <div class="home-image">
-                    <img src="images/home/home7.png" alt="home">
+            <div class="container">
+                <div class="home-wrapper display-flex">
+                    <div class="home-info">
+                        <h1>Take the Work Out of Your Ambassador Program</h1>
+                        <p>Simplifying ambassadorships for brands and influencers</p>
+                        <p>through one easy-to-use, TikTok & Instagram</p>
+                        <p>marketing platform.</p>
+                        <h2>Are You...</h2>
+                        <a class="btn" id="one">A Brand or Agency</a>
+                        <a class="btn" id="two">An Influencer</a>
+                    </div>
+                    <div class="home-image">
+                        <img src="images/home/home7.png" alt="home">
+                    </div>
                 </div>
             </div>
+        </section>
+        <!-- Home Section Ends -->
 
+
+        <!-- Campaign section starts -->
+        <section id="campaign">
             <!-- Campaign Section -->
             <div class="container home-section-two">
                 <h2>Brands, Get Access to 350k+ Creators on Demand</h2>
@@ -102,98 +111,122 @@
                     <p>Whichever side of the campaign you’re on, you know TikTok is where the money’s at! Heartbeat is a preferred partner of TikTok, meaning we are vetted experts at facilitating influencer marketing campaigns through TikTok.</p>
                 </div>
             </div>
+        </section>
+        <!-- Campaign section ends -->
 
+
+        <!-- Influencer section starts -->
+        <section id="influencer">
             <!-- Influencer Section One-->
-            <div class="container display-flex influencer-section-one">
-                <div class="influencer-image">
-                    <img src="images/home/home9.png" alt="influencer">
-                </div>
-                <div class="influencer-info">
-                    <h4>Influencers, Discover Your Voice</h4>
-                    <p>We believe every voice has value. Whether you have 500 followers or 5 million on TikTok or Instagram, brands want you to represent them, and Heartbeat makes that happen. Download our app and experience just how easy being a paid brand
-                        ambassador can be!</p>
-                    <a href="#" class="btn">Checkout The Heartbeat App!</a>
+            <div class="container">
+                <div class="display-flex influencer-section-one">
+                    <div class="influencer-image">
+                        <img src="images/home/home9.png" alt="influencer">
+                    </div>
+                    <div class="influencer-info">
+                        <h4>Influencers, Discover Your Voice</h4>
+                        <p>We believe every voice has value. Whether you have 500 followers or 5 million on TikTok or Instagram, brands want you to represent them, and Heartbeat makes that happen. Download our app and experience just how easy being a paid
+                            brand ambassador can be!</p>
+                        <a href="#" class="btn">Checkout The Heartbeat App!</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Influencer Section Two-->
-            <div class="container display-flex influencer-section-two">
-                <div class="influencer-info">
-                    <h4>Get the best brand-influencer fit possible</h4>
-                    <p>At the heart of every savvy marketing campaign is a genuine connection between the audience and brand. When you join the Heartbeat community, you gain access to and can contribute to our ever-expanding library of surveys. Our ambassadors
-                        answer 30k+ surveys a day, which helps connect the right influencers to the right brands!</p>
-                    <div class="brand-one">
-                        <img src="images/home/home3.svg" alt="influencer-brand">
-                        <p>Brands create surveys</p>
+            <div class="container">
+                <div class="display-flex influencer-section-two">
+                    <div class="influencer-info">
+                        <h4>Get the best brand-influencer fit possible</h4>
+                        <p>At the heart of every savvy marketing campaign is a genuine connection between the audience and brand. When you join the Heartbeat community, you gain access to and can contribute to our ever-expanding library of surveys. Our ambassadors
+                            answer 30k+ surveys a day, which helps connect the right influencers to the right brands!</p>
+                        <div class="brand-one">
+                            <img src="images/home/home3.svg" alt="influencer-brand">
+                            <p>Brands create surveys</p>
+                        </div>
+                        <div class="brand-two">
+                            <img src="images/home/home4.svg" alt="influencer-brand">
+                            <p>Influencers answer surveys</p>
+                        </div>
+                        <div class="brand-three">
+                            <img src="images/home/home5.svg" alt="influencer-brand">
+                            <p>We match you for the best campaigns!</p>
+                        </div>
                     </div>
-                    <div class="brand-two">
-                        <img src="images/home/home4.svg" alt="influencer-brand">
-                        <p>Influencers answer surveys</p>
+                    <div class="influencer-image">
+                        <img src="images/home/home10.png" alt="influencer">
                     </div>
-                    <div class="brand-three">
-                        <img src="images/home/home5.svg" alt="influencer-brand">
-                        <p>We match you for the best campaigns!</p>
-                    </div>
-                </div>
-                <div class="influencer-image">
-                    <img src="images/home/home10.png" alt="influencer">
                 </div>
             </div>
 
             <!-- Tik Tok Advertisement Section -->
-            <div class="container display-flex tik-tok-ad-section">
-                <div class="tik-tok-image">
-                    <img src="images/home/home6.png" alt="tik-tok">
-                </div>
-                <div class="tik-tok-info">
-                    <h4>Take advantage of the rise of TikTok</h4>
-                    <p>You know TikTok is where the money’s at! Heartbeat is a preferred partner of TikTok, meaning we are vetted experts at facilitating influencer marketing campaigns through TikTok.</p>
-                </div>
-            </div>
-
-            <!-- Instagram Ambassadorships Section -->
-            <div class="container instagram-ambassadorship">
-                <h4>Instagram ambassadorships made easy</h4>
-                <p>If you’ve ever dealt with ambassadorships before, you know the headache it can be! Heartbeat is the easiest way for marketers and ambassadors to complete large-scale influencer campaigns on Instagram.</p>
-                <a href="#" class="btn">Learn more about Heartbeat!</a>
-            </div>
-
-            <!-- Feature Section -->
-            <div class="container featured-section">
-                <div class="feature-title">
-                    <h4>We're Featured In</h4>
-                </div>
-                <div class="feature-images">
-                    <img src="images/feature/inc.svg" alt="featured">
-                    <img src="images/feature/forbes.svg" alt="featured">
-                    <img src="images/feature/inc.svg" alt="featured">
-                    <img src="images/feature/Entrepreneur.svg" alt="featured">
-                    <img src="images/feature/huffpost.svg" alt="featured">
+            <div class="container">
+                <div class="display-flex tik-tok-ad-section">
+                    <div class="tik-tok-image">
+                        <img src="images/home/home6.png" alt="tik-tok">
+                    </div>
+                    <div class="tik-tok-info">
+                        <h4>Take advantage of the rise of TikTok</h4>
+                        <p>You know TikTok is where the money’s at! Heartbeat is a preferred partner of TikTok, meaning we are vetted experts at facilitating influencer marketing campaigns through TikTok.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Home Section Ends -->
+        <!-- Influencer section ends -->
+
+        <!-- Ambassador section starts -->
+        <section>
+            <!-- Instagram Ambassadorships Section -->
+            <div class="container">
+                <div class="instagram-ambassadorship">
+                    <h4>Instagram ambassadorships made easy</h4>
+                    <p>If you’ve ever dealt with ambassadorships before, you know the headache it can be! Heartbeat is the easiest way for marketers and ambassadors to complete large-scale influencer campaigns on Instagram.</p>
+                    <a href="#" class="btn">Learn more about Heartbeat!</a>
+                </div>
+            </div>
+
+            <!-- Feature Section -->
+            <div class="container">
+                <div class="featured-section">
+                    <div class="feature-title">
+                        <h4>We're Featured In</h4>
+                    </div>
+                    <div class="feature-images">
+                        <img src="images/feature/inc.svg" alt="featured">
+                        <img src="images/feature/forbes.svg" alt="featured">
+                        <img src="images/feature/inc.svg" alt="featured">
+                        <img src="images/feature/Entrepreneur.svg" alt="featured">
+                        <img src="images/feature/huffpost.svg" alt="featured">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ambassador sections ends -->
+
 
         <!-- Blog Section Starts -->
         <section id="blog">
-            <div class="container blog-section">
-                <div class="blog-title">
-                    <h4>See The Latest From Our Blog</h4>
-                </div>
-                <div class="blog-images display-flex">
-                    <div class="blog-one">
-                        <img src="images/blog/blog1.png" alt="blog">
-                        <div class="overlay"></div>
-                        <p>Influencers</p>
-                    </div>
-                    <div class="blog-two">
-                        <img src="images/blog/blog2.png" alt="blog">
-                        <p>Brands and Agencies</p>
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="blog-three">
-                        <img src="images/blog/blog3.png" alt="blog">
-                        <p>Heartbeat University</p>
+            <div class="container">
+                <div class="blog-wrapper">
+                    <div class="blog-section">
+                        <div class="blog-title">
+                            <h4>See The Latest From Our Blog</h4>
+                        </div>
+                        <div class="blog-images display-flex">
+                            <div class="blog-one">
+                                <img src="images/blog/blog1.png" alt="blog">
+                                <div class="overlay"></div>
+                                <p>Influencers</p>
+                            </div>
+                            <div class="blog-two">
+                                <img src="images/blog/blog2.png" alt="blog">
+                                <p>Brands and Agencies</p>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="blog-three">
+                                <img src="images/blog/blog3.png" alt="blog">
+                                <p>Heartbeat University</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -202,34 +235,33 @@
 
         <!-- Contact Us Section Starts -->
         <section id="contact-us">
-            <div class="container display-flex contact-section">
-                <img src="images/contact/contact.png" alt="contact us">
-                <form class="contact-us-form">
-                    <h1>Contact Us</h1>
-                    <div class="first-name">
-                        <label>First Name</label>
-                        <input type="text">
-                    </div>
-                    <div class="last-name">
-                        <label>Last Name</label>
-                        <input type="text">
-                    </div>
-                    <div class="phone">
-                        <label>Phone</label>
-                        <input type="number">
-                    </div>
-                    <div class="email">
-                        <label>Email</label>
-                        <input type="email">
-                    </div>
-                    <button class="submit">CONTACT US NOW</button>
-                </form>
+            <div class="container">
+                <div class="display-flex contact-section">
+                    <img src="images/contact/contact.png" alt="contact us">
+                    <form class="contact-us-form">
+                        <h1>Contact Us</h1>
+                        <div class="first-name">
+                            <label>First Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="last-name">
+                            <label>Last Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="phone">
+                            <label>Phone</label>
+                            <input type="number">
+                        </div>
+                        <div class="email">
+                            <label>Email</label>
+                            <input type="email">
+                        </div>
+                        <button class="submit">CONTACT US NOW</button>
+                    </form>
+                </div>
             </div>
         </section>
         <!-- Contact Us Section Ends -->
-
-        <!-- Home Section Ends -->
-
     </main>
     <!-- Main Section Ends -->
 
