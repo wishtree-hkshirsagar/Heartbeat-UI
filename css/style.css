@@ -177,7 +177,7 @@ li {
     background-color: var(--deepSkyBlue);
     border-radius: 9px;
     padding: 5px 13px;
-    margin-top: 20px;
+    margin-top: 23px;
     margin-left: 23px;
     color: white;
     font-weight: 600;
@@ -220,42 +220,12 @@ li {
     margin-top: -54px;
 }
 
-
-/* .home-image:before {
-    content: "";
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    top: 52%;
-    right: 7%;
-    transform: translateY(-50%);
-    background-image: linear-gradient( -45deg, #fbd7e8 0%, #fbd7e8 0%);
-    border-radius: 50%;
-    z-index: -6;
-    left: 45%;
-}
-
-.home-image:after {
-    content: "";
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    top: 75%;
-    right: 7%;
-    transform: translateY(-50%);
-    background-image: linear-gradient( -45deg, #cdeff6 0%, #cdeff6 0%);
-    border-radius: 50%;
-    z-index: -6;
-    left: 84%;
-} */
-
 .home-info {
     flex: 0 0 47.3%;
 }
 
 .home-info h1 {
     font-size: 45px;
-    max-width: 30rem;
     padding-bottom: 15px;
     font-family: 'Proxima-Nova-Black';
 }
@@ -264,6 +234,7 @@ li {
     margin: 20px 0;
     position: relative;
     bottom: 5px;
+    font-size: 18px;
 }
 
 .home-info p {
@@ -289,37 +260,6 @@ li {
     text-decoration: underline;
 }
 
-
-/* .template {
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(169, 170, 172, 1));
-    width: 205px;
-    border-radius: 20px;
-    position: relative;
-    padding-top: 10px;
-    top: 17px;
-}
-
-.template span {
-    position: relative;
-    bottom: 15px;
-    font-size: 12px;
-}
-
-.template h3 {
-    position: relative;
-    left: 46px;
-    bottom: 26px;
-}
-
-.template .fa {
-    position: relative;
-    top: 0;
-    color: var(--frenchRose);
-    padding: 10px;
-    background: var(--white);
-    border-radius: 12px;
-} */
-
 .home-section-two {
     text-align: center;
     padding: 76px 0;
@@ -330,6 +270,9 @@ li {
     font-family: 'Proxima-Nova-Black';
     font-size: 33px;
 }
+
+
+/* Campaign Section */
 
 .campaign-one>h4 {
     width: 240px;
@@ -383,6 +326,9 @@ li {
 .campaign-two span {
     color: var(--deepSkyBlue);
 }
+
+
+/* Influencer Section */
 
 .tik-tok-section {
     padding: 80px 0;
@@ -508,6 +454,9 @@ li {
     font-weight: 900;
 }
 
+
+/* Ambassador section */
+
 .instagram-ambassadorship {
     text-align: center;
     padding: 60px 160px;
@@ -543,13 +492,24 @@ li {
     padding: 30px;
 }
 
+.feature-images {
+    justify-content: space-between;
+}
+
 .feature-images img:nth-child(4) {
     position: relative;
     top: 10px;
 }
 
+
+/* Blog section */
+
 .blog-wrapper {
     position: relative;
+}
+
+.blog-images {
+    justify-content: space-between;
 }
 
 .blog-section:before {
@@ -579,11 +539,6 @@ li {
     z-index: -6;
     left: 92%;
 }
-
-
-/*=====================================
-            Blog Section
-=====================================*/
 
 .blog-section img {
     padding: 15px;
@@ -670,16 +625,16 @@ li {
     max-width: 100%;
 }
 
-.contact-section {
+.contact-us-wrapper {
     background-image: url(../images/contact/contact-background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    justify-content: center;
 }
 
 .contact-section img {
     padding: 45px 0;
-    margin-left: 80px;
 }
 
 .contact-us-form {
@@ -739,35 +694,35 @@ li {
             Footer Section
 =====================================*/
 
-#footer {
-    padding: 60px 75px 0;
+footer>.container {
+    flex: 1;
 }
 
-#footer ul {
-    width: 135px;
+footer {
+    position: relative;
+    padding-top: 50px;
 }
 
-.footer-section div {
-    padding-right: 12rem;
+.footer-main {
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.footer-section h5 {
-    margin-top: 25px;
+.footer-icon {
+    justify-content: space-evenly;
+    padding-top: 30px;
 }
 
-.footer-icons {
-    margin-left: 70px;
-    padding: 25px;
-}
-
-.footer-icons img {
-    margin-right: 25px;
-}
-
-.copyright {
+.footer-legal {
+    display: flex;
+    justify-content: center;
     background-color: var(--gray);
+    height: 50px;
+    flex-direction: column;
     text-align: center;
-    width: 118%;
-    padding: 10px;
-    margin-left: -77px;
+}
+
+.footer-main-item:first-child img {
+    position: relative;
+    top: -25px;
 }

@@ -66,7 +66,7 @@
                         <p>Simplifying ambassadorships for brands and influencers</p>
                         <p>through one easy-to-use, TikTok & Instagram</p>
                         <p>marketing platform.</p>
-                        <h2>Are You...</h2>
+                        <h2>ARE YOU...</h2>
                         <a class="btn" id="one">A Brand or Agency</a>
                         <a class="btn" id="two">An Influencer</a>
                     </div>
@@ -184,13 +184,12 @@
                 </div>
             </div>
 
-            <!-- Feature Section -->
             <div class="container">
                 <div class="featured-section">
                     <div class="feature-title">
                         <h4>We're Featured In</h4>
                     </div>
-                    <div class="feature-images">
+                    <div class="feature-images display-flex">
                         <img src="images/feature/inc.svg" alt="featured">
                         <img src="images/feature/forbes.svg" alt="featured">
                         <img src="images/feature/inc.svg" alt="featured">
@@ -236,8 +235,10 @@
         <!-- Contact Us Section Starts -->
         <section id="contact-us">
             <div class="container">
-                <div class="display-flex contact-section">
-                    <img src="images/contact/contact.png" alt="contact us">
+                <div class="contact-us-wrapper display-flex">
+                    <div class="contact-section ">
+                        <img src="images/contact/contact.png" alt="contact us">
+                    </div>
                     <form class="contact-us-form">
                         <h1>Contact Us</h1>
                         <div class="first-name">
@@ -258,6 +259,7 @@
                         </div>
                         <button class="submit">CONTACT US NOW</button>
                     </form>
+
                 </div>
             </div>
         </section>
@@ -266,35 +268,44 @@
     <!-- Main Section Ends -->
 
     <!-- Footer Section Starts -->
-    <footer id="footer">
-        <div class="container display-flex footer-section">
-            <div class="footer-logo">
+    <footer id="footer display-flex">
+        <section class="footer-main display-flex">
+            <div class="footer-main-item">
                 <img src="images/footer/footer-logo.svg" alt="logo">
-            </div>
-            <div>
-                <h5>Ambassador</h5>
-            </div>
-            <div>
-                <h5>Brands</h5>
-            </div>
-            <div>
-                <h5>Quick Links</h5>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Influencers</li>
-                    <li>Brands & Agencies</li>
-                    <li>Blogs</li>
+                <ul class="footer-icon display-flex">
+                    <li>
+                        <a href="#">
+                            <img src="images/footer/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/footer/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </div>
-        <div class="footer-icons">
-            <img src="images/footer/linkedin.svg" alt="linkedin">
-            <img src="images/footer/instagram.svg" alt="instagram">
-        </div>
-        <div class="copyright">
-            <p>Copyright (c) 2021. Heartbeat. All Rights Reserved.</p>
-        </div>
+
+            <div class="footer-main-item">
+                <h5>Ambassador</h5>
+            </div>
+            <div class="footer-main-item">
+                <h5>Brands</h5>
+            </div>
+            <div class="footer-main-item">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Influencers</a></li>
+                    <li><a href="#">Brands & Agencies</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-legal">
+            <p>Copyright (c) 2022. Heartbeat. All Rights Reserved.</p>
+        </section>
     </footer>
     <!-- Footer Section Ends -->
 
