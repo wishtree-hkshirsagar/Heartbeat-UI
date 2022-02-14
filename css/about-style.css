@@ -1,3 +1,55 @@
+@font-face {
+    font-family: 'Proxima-Nova-Bold';
+    src: url('font-awesome/fonts/Proxima-Nova-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Proxima-Nova-Black';
+    src: url('font-awesome/fonts/Proxima-Nova-Black.woff') format('woff');
+}
+
+
+/*=====================================
+    Default Theme:
+    -----------------------------------
+    Fonts: 
+        Main Font:       Proxima Nova, Lato
+        Fallback Font:   Sans Serif
+    -----------------------------------
+    Colors:
+        Deep Sky Blue:   #2EC6F9
+        Sky Blue:        #22C6F9
+        French Rose:     #FC3990
+        Yellow:          #FEC00F
+        Light Pink:      #FFD7E9
+        Light Blue:      #CDEFF6
+        Dark Blue:       #18425B
+        Gray:            #BFBDBD
+        GrayOne:         #828282
+        White:           #FFFFFF
+        Black:           #050605
+=======================================*/
+
+
+/*=====================================
+                Colors
+=======================================*/
+
+:root {
+    --deepSkyBlue: #2EC6F9;
+    --skyBlue: #22C6F9;
+    --frenchRose: #FC3990;
+    --yellow: #FEC00F;
+    --darkBlue: #18425B;
+    --lightPink: #FFD7E9;
+    --lightBlue: #CDEFF6;
+    --gray: #BFBDBD;
+    --grayOne: #828282;
+    --white: #FFFFFF;
+    --black: #050605;
+}
+
+
 /*=====================================
             About Section
 =====================================*/
