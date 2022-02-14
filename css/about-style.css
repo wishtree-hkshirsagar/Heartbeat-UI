@@ -1,0 +1,228 @@
+/*=====================================
+            About Section
+=====================================*/
+
+
+/* Love section */
+
+.love-section {
+    padding: 100px 0;
+}
+
+.love-wrapper {
+    justify-content: space-between;
+}
+
+.love-content-info {
+    flex: 0 0 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.love-content-info>p {
+    padding-bottom: 15px;
+}
+
+.love-content-image img {
+    width: 535px;
+    height: 350px;
+    border-radius: 60px 20px 20px 60px;
+    -webkit-border-radius: 60px 20px 20px 60px;
+    -moz-border-radius: 60px 20px 20px 60px;
+    -ms-border-radius: 60px 20px 20px 60px;
+    -o-border-radius: 60px 20px 20px 60px;
+    box-shadow: 10px 10px var(--lightPink);
+}
+
+
+/* Influencer voice section */
+
+.influencer-voice {
+    padding-bottom: 153px;
+}
+
+.influencer-voice-image img {
+    border-radius: 20px 60px 60px 20px;
+    -webkit-border-radius: 20px 60px 60px 20px;
+    -moz-border-radius: 20px 60px 60px 20px;
+    -ms-border-radius: 20px 60px 60px 20px;
+    -o-border-radius: 20px 60px 60px 20px;
+    box-shadow: -10px 10px var(--lightBlue);
+}
+
+.influencer-voice-info,
+.small-influencer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.influencer-voice-image {
+    flex: 0 0 53%;
+}
+
+.influencer-voice-info p {
+    padding-bottom: 15px;
+}
+
+.small-influencer {
+    padding-bottom: 90px;
+}
+
+.small-influencer-image img {
+    width: 535px;
+    height: 350px;
+}
+
+.small-influencer-info p {
+    padding-bottom: 15px;
+}
+
+.small-influencer-info a {
+    background-color: var(--frenchRose);
+    color: var(--white);
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 30px;
+    width: 287px;
+}
+
+.love-content-info h2,
+.influencer-voice-info h2,
+.small-influencer-info h2 {
+    font-family: 'Proxima-Nova-Bold';
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+
+/* Team Section */
+
+.team-title {
+    text-align: center;
+    font-family: 'Proxima-Nova-Bold';
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.team-wrapper1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 78px;
+}
+
+.team-wrapper1 .member-image,
+.team-wrapper2 .member-image {
+    margin-bottom: 15px;
+}
+
+.team-wrapper1 .team-member:first-child,
+.team-wrapper2 .team-member:first-child {
+    flex: 0 0 49.5%;
+}
+
+.team-wrapper1 .team-member:last-child,
+.team-wrapper2 .team-member:last-child {
+    flex: 0 0 44%;
+}
+
+.team-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 114px;
+}
+
+.member-designation {
+    margin-bottom: 20px;
+}
+
+.team-member p {
+    margin-bottom: 15px;
+}
+
+.see-our-openings {
+    text-align: center;
+    background-color: var(--frenchRose);
+    padding: 40px 0;
+    color: var(--white);
+    margin-bottom: 60px;
+}
+
+.see-our-openings h1 {
+    margin-bottom: 25px;
+}
+
+.see-our-openings a {
+    background-color: var(--white);
+}
+
+
+/* Ambassador comment section */
+
+.comment-section .comment-title {
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Proxima-Nova-Bold';
+    font-size: 30px;
+}
+
+.comment-section-content {
+    flex: 0 0 50.5%;
+    padding: 20px;
+    position: relative;
+}
+
+.comment-section-content p {
+    box-shadow: 0px 0px 25px #00000017;
+    color: var(--grayOne);
+    padding: 20px;
+    padding-top: 35px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.pointer {
+    border: 10px solid transparent;
+    position: absolute;
+    margin: 0 0 0 15px;
+    border-bottom-color: var(--white);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.comment-section-content strong {
+    color: var(--black);
+    padding-right: 5px;
+    font-size: 15px;
+    position: relative;
+    bottom: 15px;
+}
+
+.comment-section-content img {
+    padding: 0 2px;
+    position: relative;
+    bottom: 13px;
+}
+
+.comment-section-content h5 {
+    margin-top: 15px;
+}
+
+.blog-section:before {
+    display: none !important;
+}
+
+.blog-section:after {
+    display: none !important;
+}
