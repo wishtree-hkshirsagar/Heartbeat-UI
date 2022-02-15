@@ -1,0 +1,39 @@
+/*=====================================
+            Responsive CSS
+=======================================*/
+
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1200px) {
+    .home-wrapper .home-info h1 {
+        /* color: blue; */
+    }
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home-wrapper .home-info h1 {
+        /* color: red; */
+    }
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-wrapper .home-info h1 {
+        /* color: green; */
+    }
+}
+
+
+/* Extra Small Devices (Portrait Tablets & Landscape Phone) */
+
+@media (max-width: 767px) {
+    .home-wrapper .home-info h1 {
+        /* color: yellow; */
+    }
+}
