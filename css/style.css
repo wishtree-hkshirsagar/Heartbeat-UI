@@ -496,7 +496,7 @@ li {
 }
 
 .influencer-section-two {
-    padding: 243px 0 152px 0;
+    padding: 235px 0 152px 0;
 }
 
 .influencer-section-two .influencer-info {
@@ -586,6 +586,16 @@ li {
 .tik-tok-ad-section .tik-tok-info h4 {
     font-size: 30px;
     font-weight: 900;
+    width: 494px;
+    height: 36px;
+    margin-bottom: 20px;
+}
+
+.tik-tok-ad-section .tik-tok-info p {
+    font-size: 15px;
+    line-height: 22px;
+    width: 501px;
+    height: 62px;
 }
 
 
