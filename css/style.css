@@ -19,6 +19,7 @@
     Colors:
         Deep Sky Blue:   #2EC6F9
         Sky Blue:        #22C6F9
+        Sky Blue1:       #E6F7FB
         French Rose:     #FC3990
         Yellow:          #FEC00F
         Light Pink:      #FFD7E9
@@ -38,6 +39,7 @@
 :root {
     --deepSkyBlue: #2EC6F9;
     --skyBlue: #22C6F9;
+    --skyBlue1: #E6F7FB;
     --frenchRose: #FC3990;
     --yellow: #FEC00F;
     --darkBlue: #18425B;
@@ -93,8 +95,9 @@ li {
 =====================================*/
 
 .container {
-    max-width: 1140px;
+    max-width: 1190px;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
 .display-flex {
@@ -533,20 +536,8 @@ li {
     padding: 25px;
 }
 
-.brand-one {
-    float: left;
-    position: relative;
-    left: -22px;
-}
-
-.brand-two {
-    float: left;
-    position: relative;
-    left: 45px;
-}
-
-.brand-three {
-    float: right;
+.influencer-brands {
+    display: flex;
 }
 
 .influencer-section-two .influencer-info .brand-one p,
@@ -765,17 +756,26 @@ li {
             Contact Section
 =====================================*/
 
-#contact-us .container {
-    max-width: 100%;
-}
-
-.contact-us-wrapper {
+#contact-us {
     background-image: url(../images/contact/contact-background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     justify-content: center;
 }
+
+#contact-us .container {
+    max-width: 100%;
+}
+
+
+/* .contact-us-wrapper {
+    background-image: url(../images/contact/contact-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+} */
 
 .contact-section img {
     padding: 45px 0;

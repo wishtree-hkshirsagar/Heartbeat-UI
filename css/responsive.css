@@ -6,34 +6,192 @@
 /* Large Devices (Desktops & Laptops) */
 
 @media (min-width: 1200px) {
-    .home-wrapper .home-info h1 {
-        /* color: blue; */
+    .container {
+        max-width: 100%;
+    }
+    .submit {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px;
     }
 }
 
 
 /* Medium Devices (Landscape Tablets & Medium Desktops) */
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    .home-wrapper .home-info h1 {
-        /* color: red; */
+@media (max-width: 1199px) {
+    /* Container */
+    .container {
+        max-width: 100%;
+    }
+    /* Brand tagline */
+    .brand-tagline {
+        left: 412px;
+        font-size: 20px;
+    }
+    /* Logo */
+    .brand-title img {
+        width: 100px;
+    }
+    /* Navbar links  */
+    .navbar-links li a {
+        padding-right: 25px;
+    }
+    /*=====================================
+                Home Section
+    =====================================*/
+    /* Home banner info */
+    .home-info h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .home-image img {
+        width: 485px;
+    }
+    .home-info p {
+        line-height: 25px;
+    }
+    .home-info h2 {
+        font-size: 16px;
+    }
+    #one {
+        display: inline-block;
+        width: 165px;
+    }
+    .btn-blue,
+    .btn-pink {
+        padding: 10px 15px;
+    }
+    .home-section-two h2 {
+        font-size: 25px;
+    }
+    .home-section-two p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    /* Tik Tok Section */
+    .tik-tok-section {
+        padding: 80px 20px;
+    }
+    .tik-tok-section h4 {
+        font-size: 25px;
+        margin-bottom: -5px;
+    }
+    /*=====================================
+            Influencer Section
+    =====================================*/
+    /* Section one */
+    .influencer-section-one .influencer-image img {
+        width: 425px;
+    }
+    .influencer-section-one .influencer-info h4 {
+        font-size: 25px;
+    }
+    .influencer-section-one .influencer-info p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .influencer-section-one .influencer-info a {
+        font-size: 15px;
+    }
+    /* Section two */
+    .influencer-section-two .influencer-info h4 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 5px;
+    }
+    .influencer-section-two .influencer-info p {
+        width: 465px;
+    }
+    .influencer-section-two .influencer-info img {
+        padding: 20px;
+    }
+    .influencer-section-two .influencer-image img {
+        width: 500px;
+    }
+    /* Tik-tok Section */
+    .tik-tok-image img {
+        width: 500px;
+    }
+    .tik-tok-ad-section .tik-tok-info h4 {
+        font-size: 25px;
+    }
+    /*=====================================
+            Ambassador Section
+    =====================================*/
+    .instagram-ambassadorship {
+        margin-left: 120px;
+        padding: 60px 100px;
+    }
+    .featured-section h4 {
+        margin-left: 110px;
+    }
+    .featured-section img {
+        padding: 25px;
+    }
+    .feature-images img:nth-child(4) {
+        top: 5px;
+    }
+    /*=====================================
+               Blog Section
+    =====================================*/
+    .blog-section:after {
+        top: -54%;
+        left: 101%;
+    }
+    .blog-three img {
+        padding: 24px 100px;
+    }
+    .blog-title h4 {
+        margin-left: 130px;
+    }
+    .blog-one img,
+    .blog-two img {
+        width: 345px;
+    }
+    .blog-one .overlay,
+    .blog-two .overlay {
+        width: 315px;
+        left: 15px;
+    }
+    .submit {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px;
     }
 }
 
 
 /* Small Devices (Portrait Tablets & Small Desktops) */
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .home-wrapper .home-info h1 {
-        /* color: green; */
-    }
-}
+@media (max-width: 991px) {}
 
 
 /* Extra Small Devices (Portrait Tablets & Landscape Phone) */
 
 @media (max-width: 767px) {
-    .home-wrapper .home-info h1 {
-        /* color: yellow; */
+    .header {
+        background: var(--skyBlue1);
+    }
+    .navbar {
+        justify-content: center;
+        align-items: center;
+        background: var(--skyBlue1);
+    }
+    .navbar-links ul li {
+        display: none;
+    }
+    .brand-tagline {
+        position: unset;
+    }
+    .brand-title img {
+        display: none;
+    }
+    .home-info {
+        display: none;
+    }
+    .home-image img {
+        width: 610px;
+        margin: 0 auto;
     }
 }
