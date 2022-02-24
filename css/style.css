@@ -64,6 +64,12 @@
     box-sizing: inherit;
 }
 
+img {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+
 
 /*=====================================
              Html, Body
@@ -95,9 +101,9 @@ li {
 =====================================*/
 
 .container {
-    max-width: 1190px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 25px;
 }
 
 .display-flex {
@@ -179,10 +185,18 @@ li {
 
 .brand-tagline {
     position: absolute;
-    left: 506px;
+    right: 0;
     font-family: 'Proxima-Nova-Bold';
     font-size: 24px;
     top: -16px;
+}
+
+.brand {
+    padding: 0 271px;
+}
+
+.navbar-nav {
+    position: relative;
 }
 
 .navbar-links {
@@ -310,23 +324,24 @@ li {
 .home-section-two {
     text-align: center;
     padding: 10px 0;
-    width: 812px;
 }
 
 .home-section-two h2 {
     font-family: 'Proxima-Nova-Black';
     font-size: 30px;
-    width: 708px;
-    height: 37px;
     position: relative;
-    left: 55px;
 }
 
 .home-section-two p {
     font-size: 15px;
-    width: 812px;
-    height: 62px;
     line-height: 22px;
+}
+
+
+/* Mobile Logo */
+
+.mobile-nav-logo {
+    display: none;
 }
 
 
@@ -339,16 +354,16 @@ li {
 .campaign-one {
     position: relative;
     right: -45px;
+    text-align: center;
 }
 
 .campaign-two {
     position: relative;
     left: -45px;
+    text-align: center;
 }
 
 .campaign-one>h4 {
-    width: 278px;
-    height: 48px;
     margin-left: 22px;
     font-size: 20px;
     line-height: 22px;
@@ -356,16 +371,12 @@ li {
 }
 
 .campaign-two>h4 {
-    width: 374px;
-    height: 48px;
     font-size: 20px;
     font-family: 'Proxima-Nova-Bold';
     line-height: 24px;
 }
 
 .campaign-one>p {
-    width: 314px;
-    height: 106px;
     font-size: 15px;
     line-height: 22px;
     margin-top: 10px;
@@ -387,8 +398,6 @@ li {
 }
 
 .campaign-two>p {
-    width: 346px;
-    height: 106px;
     font-size: 15px;
     line-height: 22px;
     margin-top: 10px;
@@ -404,8 +413,7 @@ li {
 .campaign-one img,
 .campaign-two img {
     padding-top: 25px;
-    height: 100px;
-    width: 103.58px;
+    margin-bottom: 25px;
 }
 
 .campaign-divider {
@@ -413,10 +421,35 @@ li {
     top: 62px;
 }
 
-.campaign-one span,
+.campaign-divider-image {
+    width: 150px;
+    max-width: 150px;
+}
+
 .campaign-one a,
-.campaign-two span {
+.campaign-two a {
     color: var(--deepSkyBlue);
+}
+
+.campaign-one-image,
+.campaign-two-image,
+.campaign-two-links {
+    text-align: center;
+}
+
+.campaign-one-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.campaign-one a:last-child {
+    text-decoration: underline;
+}
+
+.tik-tok-wrapper {
+    text-align: center;
+    padding: 0 192px;
 }
 
 
@@ -429,18 +462,20 @@ li {
 .tik-tok-section h4 {
     font-family: 'Proxima-Nova-Bold';
     font-size: 30px;
-    width: 496px;
-    height: 37px;
     position: relative;
-    left: 116px;
     margin-bottom: 7px;
 }
 
 .tik-tok-section p {
     font-size: 15px;
-    width: 728px;
-    height: 40px;
     line-height: 22px;
+}
+
+.brand-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    padding: 0 30px;
 }
 
 .influencer {
@@ -471,8 +506,6 @@ li {
 }
 
 .influencer-section-one .influencer-info p {
-    width: 450px;
-    height: 84px;
     font-size: 15px;
     line-height: 22px;
     margin-bottom: 20px;
@@ -505,6 +538,10 @@ li {
 .influencer-section-two .influencer-info {
     flex: 0 0 52.19%;
     max-width: 52.19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .influencer-section-two .influencer-image {
@@ -513,8 +550,6 @@ li {
 }
 
 .influencer-section-two .influencer-info h4 {
-    width: 434px;
-    height: 74px;
     font-size: 30px;
     line-height: 37px;
     font-family: 'Proxima-Nova-Bold';
@@ -522,10 +557,9 @@ li {
 }
 
 .influencer-section-two .influencer-info p {
-    width: 533px;
-    height: 106px;
     font-size: 15px;
     line-height: 22px;
+    margin-bottom: 30px;
 }
 
 .influencer-section-two .influencer-image img {
@@ -533,33 +567,11 @@ li {
 }
 
 .influencer-section-two .influencer-info img {
-    padding: 25px;
+    padding: 0 0 10px 0;
 }
 
 .influencer-brands {
     display: flex;
-}
-
-.influencer-section-two .influencer-info .brand-one p,
-.influencer-section-two .influencer-info .brand-two p,
-.influencer-section-two .influencer-info .brand-three p {
-    position: relative;
-    top: -20px;
-    left: 25px;
-    text-align: center;
-}
-
-.influencer-section-two .influencer-info .brand-one p {
-    width: 98px;
-}
-
-.influencer-section-two .influencer-info .brand-two p {
-    width: 108px;
-}
-
-.influencer-section-two .influencer-info .brand-three p {
-    width: 152px;
-    left: 6px;
 }
 
 .tik-tok-ad-section .tik-tok-image {
@@ -568,25 +580,23 @@ li {
 }
 
 .tik-tok-ad-section .tik-tok-info {
-    padding-top: 155px;
-    margin-left: 30px;
     flex: 0 0 48.96%;
     max-width: 48.96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
 }
 
 .tik-tok-ad-section .tik-tok-info h4 {
     font-size: 30px;
     font-weight: 900;
-    width: 494px;
-    height: 36px;
     margin-bottom: 20px;
 }
 
 .tik-tok-ad-section .tik-tok-info p {
     font-size: 15px;
     line-height: 22px;
-    width: 501px;
-    height: 62px;
 }
 
 
@@ -689,8 +699,6 @@ li {
 
 .blog-one img,
 .blog-two img {
-    width: 360px;
-    height: 200px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -707,8 +715,8 @@ li {
 }
 
 .blog-one .overlay {
-    width: 330px;
-    height: 60px;
+    /* width: 330px;
+    height: 60px; */
     position: relative;
     left: 15px;
     bottom: 78px;
@@ -725,8 +733,8 @@ li {
 }
 
 .blog-two .overlay {
-    width: 330px;
-    height: 60px;
+    /* width: 330px;
+    height: 60px; */
     position: relative;
     left: 15px;
     bottom: 98px;
@@ -768,14 +776,13 @@ li {
     max-width: 100%;
 }
 
-
-/* .contact-us-wrapper {
-    background-image: url(../images/contact/contact-background.png);
+.contact-us-wrapper {
+    /* background-image: url(../images/contact/contact-background.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     justify-content: center;
-} */
+}
 
 .contact-section img {
     padding: 45px 0;
@@ -783,7 +790,7 @@ li {
 
 .contact-us-form {
     background: var(--white);
-    width: 570px;
+    /* width: 570px; */
     padding: 45px 35px;
     margin-top: 45px;
     height: 365px;
@@ -798,7 +805,7 @@ li {
     background: transparent;
     border: none;
     border-bottom: 1px solid var(--black);
-    width: 370px;
+    /* width: 370px; */
 }
 
 .contact-us-form div {

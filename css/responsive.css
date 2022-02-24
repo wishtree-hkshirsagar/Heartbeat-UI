@@ -2,196 +2,409 @@
             Responsive CSS
 =======================================*/
 
+:root {
+    --skyBlue1: #E6F7FB;
+}
+
 
 /* Large Devices (Desktops & Laptops) */
 
 @media (min-width: 1200px) {
-    .container {
-        max-width: 100%;
-    }
-    .submit {
-        margin-left: 0;
-        margin-top: 0;
-        padding: 10px;
+    .brand {
+        padding: 0 200px;
     }
 }
 
 
 /* Medium Devices (Landscape Tablets & Medium Desktops) */
 
-@media (max-width: 1199px) {
-    /* Container */
-    .container {
-        max-width: 100%;
-    }
-    /* Brand tagline */
-    .brand-tagline {
-        left: 412px;
-        font-size: 20px;
-    }
-    /* Logo */
-    .brand-title img {
-        width: 100px;
-    }
-    /* Navbar links  */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Navlinks */
     .navbar-links li a {
-        padding-right: 25px;
+        padding-right: 35px;
     }
-    /*=====================================
-                Home Section
-    =====================================*/
-    /* Home banner info */
+    /* Brand */
+    .brand-tagline {
+        left: 415px;
+    }
+    .brand {
+        padding: 0 100px;
+    }
+    /* Home banner */
     .home-info h1 {
-        font-size: 35px;
+        font-size: 40px;
         line-height: 45px;
-    }
-    .home-image img {
-        width: 485px;
     }
     .home-info p {
         line-height: 25px;
     }
-    .home-info h2 {
-        font-size: 16px;
+    .tik-tok-wrapper {
+        padding: 0 120px;
     }
-    #one {
-        display: inline-block;
-        width: 165px;
+    .influencer-section-one {
+        justify-content: space-around;
     }
-    .btn-blue,
-    .btn-pink {
-        padding: 10px 15px;
+    .influencer-section-one .influencer-image {
+        flex: 0 0 47%;
+        max-width: 47%;
     }
-    .home-section-two h2 {
-        font-size: 25px;
-    }
-    .home-section-two p {
-        font-size: 14px;
-        line-height: 20px;
-    }
-    /* Tik Tok Section */
-    .tik-tok-section {
-        padding: 80px 20px;
-    }
-    .tik-tok-section h4 {
-        font-size: 25px;
-        margin-bottom: -5px;
-    }
-    /*=====================================
-            Influencer Section
-    =====================================*/
-    /* Section one */
-    .influencer-section-one .influencer-image img {
-        width: 425px;
+    .influencer-section-one .influencer-info {
+        flex: 0 0 40%;
+        max-width: 40%;
     }
     .influencer-section-one .influencer-info h4 {
         font-size: 25px;
+        margin-bottom: 10px;
     }
     .influencer-section-one .influencer-info p {
-        font-size: 15px;
-        line-height: 22px;
+        line-height: 20px;
+        margin-bottom: 15px;
     }
     .influencer-section-one .influencer-info a {
         font-size: 15px;
     }
-    /* Section two */
+    .influencer-section-two .influencer-info {
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
     .influencer-section-two .influencer-info h4 {
         font-size: 25px;
-        line-height: 35px;
-        margin-top: 5px;
+        line-height: 30px;
     }
     .influencer-section-two .influencer-info p {
-        width: 465px;
-    }
-    .influencer-section-two .influencer-info img {
-        padding: 20px;
-    }
-    .influencer-section-two .influencer-image img {
-        width: 500px;
-    }
-    /* Tik-tok Section */
-    .tik-tok-image img {
-        width: 500px;
+        line-height: 20px;
     }
     .tik-tok-ad-section .tik-tok-info h4 {
         font-size: 25px;
-    }
-    /*=====================================
-            Ambassador Section
-    =====================================*/
-    .instagram-ambassadorship {
-        margin-left: 120px;
-        padding: 60px 100px;
-    }
-    .featured-section h4 {
-        margin-left: 110px;
-    }
-    .featured-section img {
-        padding: 25px;
-    }
-    .feature-images img:nth-child(4) {
-        top: 5px;
-    }
-    /*=====================================
-               Blog Section
-    =====================================*/
-    .blog-section:after {
-        top: -54%;
-        left: 101%;
-    }
-    .blog-three img {
-        padding: 24px 100px;
-    }
-    .blog-title h4 {
-        margin-left: 130px;
-    }
-    .blog-one img,
-    .blog-two img {
-        width: 345px;
-    }
-    .blog-one .overlay,
-    .blog-two .overlay {
-        width: 315px;
-        left: 15px;
-    }
-    .submit {
-        margin-left: 0;
-        margin-top: 0;
-        padding: 10px;
     }
 }
 
 
 /* Small Devices (Portrait Tablets & Small Desktops) */
 
-@media (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Header */
+    header {
+        background: var(--skyBlue1);
+    }
+    .navbar-links,
+    .brand-title {
+        display: none;
+    }
+    .mobile-nav-logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .mobile-nav-logo img {
+        margin-top: -50px;
+    }
+    /* Home Banner */
+    .home-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-info {
+        order: 1;
+        padding-top: 20px;
+    }
+    .home-info::before {
+        content: none;
+    }
+    .home-image {
+        order: 0;
+        padding: 25px 0;
+    }
+    .home-info h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .home-info p {
+        line-height: 25px;
+    }
+    .home-section-two h2 {
+        left: 0;
+        font-size: 25px;
+    }
+    .home-section-two p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .navbar-nav,
+    .brand-tagline {
+        position: unset;
+    }
+    .navbar {
+        display: block;
+        text-align: center;
+        background: var(--skyBlue1);
+    }
+    /* Brand */
+    .brand {
+        padding: 0 50px;
+    }
+    /* Campaigns */
+    .campaigns {
+        flex-direction: column;
+    }
+    .campaign-divider {
+        display: none;
+    }
+    .campaign-one {
+        right: 0;
+    }
+    .campaign-two {
+        left: 0;
+    }
+    .tik-tok-wrapper {
+        padding: 0 35px;
+    }
+    .influencer-section-one {
+        justify-content: space-around;
+    }
+    .influencer-section-one .influencer-image {
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
+    .influencer-section-one .influencer-info {
+        flex: 0 0 42%;
+    }
+    .influencer-section-one .influencer-info h4 {
+        font-size: 20px;
+        margin-bottom: -2px;
+    }
+    .influencer-section-one .influencer-info p {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+    .influencer-section-one .influencer-info a {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .influencer-section-two {
+        padding: 100px 0 152px 0;
+    }
+    .influencer-section-two .influencer-image {
+        flex: 0 0 43%;
+        max-width: 43%;
+    }
+    .influencer-section-two .influencer-info h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .influencer-section-two .influencer-info p {
+        margin-bottom: 20px;
+    }
+    .tik-tok-ad-section .tik-tok-info h4 {
+        font-size: 25px;
+    }
+}
 
 
 /* Extra Small Devices (Portrait Tablets & Landscape Phone) */
 
-@media (max-width: 767px) {
-    .header {
+@media (max-width: 360px) {
+    /* Header */
+    header {
         background: var(--skyBlue1);
+        padding: 20 0;
     }
-    .navbar {
-        justify-content: center;
-        align-items: center;
-        background: var(--skyBlue1);
-    }
-    .navbar-links ul li {
+    .navbar-links,
+    .brand-title {
         display: none;
     }
+    .mobile-nav-logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .mobile-nav-logo img {
+        margin-top: -50px;
+    }
+    /* Home Banner */
+    .home-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-info {
+        order: 1;
+        padding-top: 20px;
+    }
+    .home-info::before {
+        content: none;
+    }
+    .home-image {
+        order: 0;
+        padding: 25px 0;
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    .home-info {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    .home-info h1 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+    .home-info h2 {
+        font-size: 15px;
+    }
+    .home-info p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .home-section-two h2 {
+        left: 0;
+        font-size: 25px;
+    }
+    .home-section-two p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .navbar-nav,
     .brand-tagline {
         position: unset;
     }
-    .brand-title img {
+    .navbar {
+        display: block;
+        text-align: center;
+        background: var(--skyBlue1);
+    }
+    /* Brand */
+    .brand {
+        padding: 0 25px;
+    }
+    .brand-tagline {
+        font-size: 18px;
+    }
+    #two {
+        position: relative;
+        top: 25px;
+        display: inline-block;
+    }
+    /* Campaigns */
+    .campaigns {
+        flex-direction: column;
+    }
+    .campaign-divider {
         display: none;
     }
-    .home-info {
-        display: none;
+    .campaign-one {
+        right: 0;
     }
-    .home-image img {
-        width: 610px;
-        margin: 0 auto;
+    .campaign-two {
+        left: 0;
+    }
+    .campaign-one>h4 {
+        margin-left: 0;
+    }
+    .campaign-one>h4,
+    .campaign-two>h4 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .campaign-one>p,
+    .campaign-two>p {
+        line-height: 18px;
+    }
+    .tik-tok-wrapper {
+        text-align: center;
+        padding: 0 20px;
+    }
+    .tik-tok-section {
+        padding: 50px 10px;
+    }
+    .tik-tok-section h4 {
+        font-size: 25px;
+    }
+    .tik-tok-section p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .influencer-section-one {
+        flex-direction: column;
+    }
+    .influencer-section-one .influencer-image {
+        order: 1;
+    }
+    .influencer-section-one .influencer-info h4 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .influencer-section-one .influencer-info p {
+        line-height: 20px;
+    }
+    .influencer-section-one .influencer-info a {
+        font-size: 12px;
+        margin-top: 0;
+    }
+    .influencer-section-one .influencer-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 25px;
+    }
+    .influencer-section-two {
+        padding: 75px 0 152px 0;
+        flex-direction: column;
+        margin-bottom: -50px;
+    }
+    .influencer-section-two .influencer-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .influencer-section-two .influencer-info h4 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .influencer-section-two .influencer-info p {
+        line-height: 20px;
+    }
+    .influencer-brands {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 -25px;
+    }
+    .influencer-section-two .influencer-info .brand-one p,
+    .influencer-section-two .influencer-info .brand-two p,
+    .influencer-section-two .influencer-info .brand-three p {
+        left: 0;
+    }
+    .influencer-brands .brand-one {
+        align-self: flex-start;
+    }
+    .brand-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+        padding: 0px 25px;
+    }
+    .influencer-section-two .influencer-image img {
+        margin-left: 0;
+    }
+    .influencer-section-two .influencer-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .tik-tok-ad-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tik-tok-ad-section .tik-tok-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 1;
+    }
+    .tik-tok-ad-section .tik-tok-info {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
