@@ -3,6 +3,7 @@
 =======================================*/
 
 :root {
+    --white: #FFFFFF;
     --skyBlue1: #E6F7FB;
 }
 
@@ -13,12 +14,18 @@
     .brand {
         padding: 0 200px;
     }
+    .mobile-navbar-links {
+        display: none;
+    }
 }
 
 
 /* Medium Devices (Landscape Tablets & Medium Desktops) */
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    .mobile-navbar-links {
+        display: none;
+    }
     /* Navlinks */
     .navbar-links li a {
         padding-right: 35px;
@@ -77,6 +84,17 @@
     .tik-tok-ad-section .tik-tok-info h4 {
         font-size: 25px;
     }
+    .feature-images {
+        justify-content: space-around;
+    }
+    .featured-section img {
+        padding: 20px;
+    }
+    .blog-one .overlay,
+    .blog-two .overlay {
+        width: 294px;
+        height: 62px;
+    }
 }
 
 
@@ -86,6 +104,20 @@
     /* Header */
     header {
         background: var(--skyBlue1);
+    }
+    .mobile-nav-wrapper {
+        background: var(--white);
+        padding: 15px 10px;
+        justify-content: space-evenly;
+    }
+    .mobile-nav-wrapper .nav-divider {
+        padding: 0 20px;
+    }
+    .mobile-navbar-links {
+        display: block;
+    }
+    .mobile-nav-items {
+        text-align: center;
     }
     .navbar-links,
     .brand-title {
@@ -201,6 +233,42 @@
     .tik-tok-ad-section .tik-tok-info h4 {
         font-size: 25px;
     }
+    .influencer-section-two {
+        margin-bottom: -50px;
+    }
+    .instagram-ambassadorship {
+        padding: 60px 90px;
+    }
+    .featured-section img {
+        padding: 25px;
+    }
+    .feature-images {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .blog-two {
+        margin-left: -7px;
+    }
+    .blog-three img {
+        padding: 57px 95px;
+        margin-top: -40px;
+        margin-bottom: 40px;
+    }
+    .blog-three p {
+        bottom: 52px;
+    }
+    .blog-images {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .contact-us-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-us-form {
+        padding: 16px 135px;
+        margin-top: 0;
+    }
 }
 
 
@@ -211,6 +279,46 @@
     header {
         background: var(--skyBlue1);
         padding: 20 0;
+    }
+    .home-info {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .mobile-navigation .container {
+        padding: 0;
+    }
+    .mobile-nav-wrapper {
+        background: var(--white);
+        padding: 15px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-nav-wrapper .nav-divider {
+        padding: 0 20px;
+    }
+    .nav-link {
+        letter-spacing: 0;
+        font-size: 1.2rem;
+    }
+    .mobile-navbar-links {
+        display: block;
+    }
+    #nav-btn {
+        /* position: fixed;
+        bottom: 5%;
+        right: 5%; */
+        font-size: 2.5rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .btn-pink {
+        padding: 14px 38px;
+    }
+    .blog-three img {
+        width: 100%;
+    }
+    .mobile-navbar-links .mobile-nav {
+        font-size: 0.5rem;
     }
     .navbar-links,
     .brand-title {
@@ -223,6 +331,9 @@
     }
     .mobile-nav-logo img {
         margin-top: -50px;
+    }
+    .mobile-nav-wrapper {
+        font-size: 16px;
     }
     /* Home Banner */
     .home-wrapper {
@@ -405,6 +516,59 @@
     }
     .tik-tok-ad-section .tik-tok-info {
         flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .instagram-ambassadorship {
+        padding: 60px 0;
+    }
+    .featured-section img {
+        padding: 25px;
+    }
+    .feature-images {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .blog-images {
+        flex-direction: column;
+    }
+    .blog-three img {
+        padding: 40px 98px;
+        /* margin-left: 15px; */
+        margin-bottom: 40px;
+    }
+    .blog-three p {
+        left: 25px;
+    }
+    .influencer-section-one .influencer-info::after {
+        content: none;
+    }
+    .blog-section::before,
+    .blog-section::after {
+        content: none;
+    }
+    .blog-one .overlay,
+    .blog-two .overlay {
+        width: 240px;
+    }
+    .contact-us-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-us-form {
+        margin-top: 0;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        /* height: 0; */
+    }
+    .contact-us-form .submit {
+        margin-left: 0;
+    }
+    .footer-main-item:first-child {
+        flex: 0 0 100%;
+    }
+    .footer-main-item:first-child img {
+        width: 100%;
         max-width: 100%;
     }
 }
